@@ -1,23 +1,61 @@
 aid: alembic
+
 name: Alembic
-description: 'Alembic is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.sanity.io/images/8dklkuhz/production/33ce3d4c505c58a645ece94772a71fea58ecad98-1200x630.png
+
+description: 'Alembic offers an enterprise causal AI platform that models cause‑and‑effect across marketing, sales, pricing, supply and operations. It provides decision‑grade intelligence for CEOs, CFOs, COOs, CMOs and other senior leaders, enabling real‑time simulation of strategic choices and proof of what drives growth.'
+
 url: https://raw.githubusercontent.com/api-evangelist/alembic/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Causal AI
+- Decision Intelligence
+- Business Intelligence
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/alembic-hosts.yml
+- type: TermsOfService
+  url: https://alembic.com/terms
+- type: Security
+  url: https://alembic.com/security
+- type: PrivacyPolicy
+  url: https://alembic.com/privacy
+- type: Newsroom
+  url: https://alembic.com/news
+- type: Blog
+  url: https://alembic.com/blog
+- type: VulnerabilityDisclosure
+  url: security/alembic-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/alembic-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://alembic.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
